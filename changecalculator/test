@@ -1,0 +1,14 @@
+#!/bin/bash
+i=$1
+d=0
+while [ "$d" -lt "100" ]; do
+  if [ "$d" -lt "10" ]; then
+    echo ===for $i.0$d===
+    ./changecalculator "$[i].0$[d]"
+  else
+    echo ===for $i.$d===
+    ./changecalculator "$[i].$[d]"
+  fi
+  d=$[d+1]
+  echo ===done===
+done

@@ -1,0 +1,15 @@
+booltest2 by Braden Best
+
+Same as booltest, but I changed to toggle function to use a bitwise operation.
+
+set: index += 2 ^ n
+
+becomes
+
+set: index += 1 << n
+
+Two functions: get and toggle
+
+get: returns (settings >> index) & 1
+
+toggle: adds or subtracts 1 << index from settings based on whether (settings >> index) & 1

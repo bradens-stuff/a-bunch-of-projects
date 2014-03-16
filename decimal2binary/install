@@ -1,0 +1,7 @@
+#!/bin/bash
+# compile and install into /usr/bin
+sudo echo compiling project . . .
+gcc main.c binary.c -o decimal2binary -Wall
+echo done. installing . . .
+sudo mv decimal2binary /usr/bin
+echo done
