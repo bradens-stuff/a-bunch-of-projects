@@ -1,0 +1,4 @@
+#!/bin/bash
+# ./configure
+make screenconfigure
+sudo chmod 666 Makefile

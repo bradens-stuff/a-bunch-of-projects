@@ -1,0 +1,41 @@
+.TH Timer 1 "February 2014" "Timer 1.0" "Timer User Manual"
+.SH NAME
+timer \- Starts a count down timer with the specified number of seconds
+.SH SYNOPSIS
+\fBtimer\fR [\fIoptions\fR] [\fIseconds\fR]
+.SH DESCRIPTION
+timer starts a countdown timer with the specified number of seconds. Default is 0 seconds.
+
+Minutes, hours and seconds can be combined, so e.g. \fItimer -h 2 -m 9 -s 10\fR will start a timer for 2 hours, 9 minutes and 10 seconds.
+
+If minutes, hours, or seconds are declared via their options (-m, -h, or -s), then further arguments will be ignored. So \fItimer -s 10 500\fR will start a timer for \fB10 seconds\fR, and will ignore the \fB500\fR
+.SH OPTIONS
+.TP
+\fB-v\fR
+verbose mode
+.TP
+\fB-s\fR
+specify number of seconds
+.TP
+\fB-m\fR
+specify number of minutes
+.TP
+\fB-h\fR
+specify number of hours
+.SH EXAMPLES
+.TP
+timer 5
+start a timer for 5 seconds
+.TP
+timer -v 5
+start a timer for 5 seconds, verbose mode
+.TP
+timer -v -s 5 15
+start a timer for 5 seconds (ignoring 15), verbose mode
+.TP
+timer -v -m 5 -s 6
+start a timer for 5 minutes and 6 seconds (306 seconds), verbose mode
+.SH BUGS
+None that I know of. You \fBmight\fR get a segfault with some combinations of arguments. Or I might have already ironed that out.
+.SH AUTHOR
+Braden Best <\fIbradentbest@gmail.com\fR>
