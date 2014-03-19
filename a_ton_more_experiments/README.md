@@ -40,7 +40,7 @@ Usage:
 
     $ ./cal
 
-A clone of GNU's `cal`
+A cheap clone of GNU's `cal`
 
 ceasarcipher
 -
