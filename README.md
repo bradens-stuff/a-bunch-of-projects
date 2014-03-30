@@ -16,3 +16,4 @@ Each project gets its own branch. Here's a directory of the existing branches:
 #### [randwalk](https://github.com/bradens-stuff/a-bunch-of-projects/tree/randwalk)
 #### [rot13](https://github.com/bradens-stuff/a-bunch-of-projects/tree/rot13)
 #### [timer](https://github.com/bradens-stuff/a-bunch-of-projects/tree/timer)
+#### [typo](https://github.com/bradens-stuff/a-bunch-of-projects/tree/typo)
