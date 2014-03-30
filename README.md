@@ -1,6 +1,7 @@
-# A Bunch Of Random Old Projects by Braden Best
+# ASCII Table renderer
 
-Each project gets its own branch. Here's a directory of the existing branches:
+Renders an ASCII table using linux terminal escape codes
 
-* master (this branch)
-* ascii-table
+To compile
+-
+    $ make
