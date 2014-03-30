@@ -8,3 +8,4 @@ Each project gets its own branch. Here's a directory of the existing branches:
 #### [booltest](https://github.com/bradens-stuff/a-bunch-of-projects/tree/booltest)
 #### [change-calculator](https://github.com/bradens-stuff/a-bunch-of-projects/tree/change-calculator)
 #### [clock-test](https://github.com/bradens-stuff/a-bunch-of-projects/tree/clock-test)
+#### [decimal-to-binary](https://github.com/bradens-stuff/a-bunch-of-projects/tree/decimal-to-binary)

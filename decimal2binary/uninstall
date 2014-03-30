@@ -1,5 +1,0 @@
-#!/bin/bash
-# uninstall project from /usr/bin
-sudo echo removing . . .
-sudo rm /usr/bin/decimal2binary
-echo done

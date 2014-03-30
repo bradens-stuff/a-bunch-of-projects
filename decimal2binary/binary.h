@@ -1,1 +1,0 @@
-void binary(int dec);
