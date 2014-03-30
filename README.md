@@ -1,15 +1,23 @@
-# A Bunch Of Random Old Projects by Braden Best
+# Framebuffer Random Walk
 
-Each project gets its own branch. Here's a directory of the existing branches:
+To configure:
+-
+Run the following command and follow the instructions
 
-## [master](https://github.com/bradens-stuff/a-bunch-of-projects/tree/master) (this branch)
+    $ make info
 
-#### [ascii-table](https://github.com/bradens-stuff/a-bunch-of-projects/tree/ascii-table)
-#### [booltest](https://github.com/bradens-stuff/a-bunch-of-projects/tree/booltest)
-#### [change-calculator](https://github.com/bradens-stuff/a-bunch-of-projects/tree/change-calculator)
-#### [clock-test](https://github.com/bradens-stuff/a-bunch-of-projects/tree/clock-test)
-#### [cpp-snake](https://github.com/bradens-stuff/a-bunch-of-projects/tree/cpp-snake)
-#### [decimal-to-binary](https://github.com/bradens-stuff/a-bunch-of-projects/tree/decimal-to-binary)
-#### [even-odd](https://github.com/bradens-stuff/a-bunch-of-projects/tree/even-odd)
-#### [fbprint](https://github.com/bradens-stuff/a-bunch-of-projects/tree/fbprint)
-#### [isvowel](https://github.com/bradens-stuff/a-bunch-of-projects/tree/isvowel)
+Note that the resolution defaults to 100x100 (I assume there does not exist a device which has a screen smaller than 100x100 pixels). 
+
+So Make sure to do this step unless you want an absurdly small snake game.
+
+To compile without installing:
+-
+    $ make
+
+To compile and install:
+-
+    $ make install
+
+To uninstall:
+-
+    $ make uninstall
