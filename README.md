@@ -1,6 +1,3 @@
-# A Bunch Of Random Old Projects by Braden Best
+# booltest
 
-Each project gets its own branch. Here's a directory of the existing branches:
-
-* master (this branch)
-* ascii-table
+A test of bitmasking--using one integer to store multiple boolean values
