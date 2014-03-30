@@ -1,11 +1,5 @@
-# A Bunch Of Random Old Projects by Braden Best
+# evenodd -- check if a number is even or odd
 
-Each project gets its own branch. Here's a directory of the existing branches:
-
-## [master](https://github.com/bradens-stuff/a-bunch-of-projects/tree/master) (this branch)
-
-#### [ascii-table](https://github.com/bradens-stuff/a-bunch-of-projects/tree/ascii-table)
-#### [booltest](https://github.com/bradens-stuff/a-bunch-of-projects/tree/booltest)
-#### [change-calculator](https://github.com/bradens-stuff/a-bunch-of-projects/tree/change-calculator)
-#### [clock-test](https://github.com/bradens-stuff/a-bunch-of-projects/tree/clock-test)
-#### [decimal-to-binary](https://github.com/bradens-stuff/a-bunch-of-projects/tree/decimal-to-binary)
+Usage
+-
+    $ ./evenodd [number]
