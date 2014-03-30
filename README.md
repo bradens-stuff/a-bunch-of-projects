@@ -1,10 +1,7 @@
-# A Bunch Of Random Old Projects by Braden Best
+# decimal2binary -- convert decimal to binary
 
-Each project gets its own branch. Here's a directory of the existing branches:
+converts a decimal number to a binary number
 
-## [master](https://github.com/bradens-stuff/a-bunch-of-projects/tree/master) (this branch)
-
-#### [ascii-table](https://github.com/bradens-stuff/a-bunch-of-projects/tree/ascii-table)
-#### [booltest](https://github.com/bradens-stuff/a-bunch-of-projects/tree/booltest)
-#### [change-calculator](https://github.com/bradens-stuff/a-bunch-of-projects/tree/change-calculator)
-#### [clock-test](https://github.com/bradens-stuff/a-bunch-of-projects/tree/clock-test)
+Usage
+-
+    $ ./decimal2binary [number]
