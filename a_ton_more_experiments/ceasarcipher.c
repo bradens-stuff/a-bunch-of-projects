@@ -28,13 +28,22 @@ void decode(char *str, int rot){
   encode(str, 26 - rot); // In a Ceasar Cipher, decoding is just encoding using the difference of 26 and the encoding key. No need to program new logic
 }
 
+void brute(char *str){
+  int i;
+  for(i = 1; i <= 26; i++){
+    printf("%02i:\t", i);
+    decode(str,i);
+    printf("\n");
+  }
+}
+
 int main(int argc, char **argv){
   opterr = 0;
   int c;
   int rot = DEFAULT_ROT;
   int flags = 0; 
   char str[10000];
-  while((c = getopt(argc,argv,"e:d:r:")) != -1){
+  while((c = getopt(argc,argv,"b:e:d:r:")) != -1){
     switch(c){
       case 'e':
         strcpy(str, optarg);
@@ -47,6 +56,10 @@ int main(int argc, char **argv){
       case 'r':
         rot = atoi(optarg);
         flags += 1 << 2;
+        break;
+      case 'b':
+        strcpy(str, optarg);
+        flags += 1 << 3;
         break;
     }
   }
@@ -61,7 +74,17 @@ int main(int argc, char **argv){
   if((flags >> 0) & 1){ // encode flag is set
     encode(str,rot);
   }
+  if((flags >> 3) & 1){ // brute force flag is set
+    brute(str);
+  }
 
-  if(!flags)    printf("Usage: %s [options]\noptions:\n  -e [string]:\tencode string\n  -d [string]:\tdecode string\n  -r [number]:\trotation factor (e.g. -r 13 generates rot13)\n",argv[0]);
+  if(!flags)
+    printf("\
+Usage: %s [options]\n\
+options:\n\
+  -b [string]:\tbrute force string (tries all 26 possible rot values to decode it)\n\
+  -e [string]:\tencode string\n\
+  -d [string]:\tdecode string\n\
+  -r [number]:\trotation factor (e.g. -r 13 generates rot13)\n",argv[0]);
   return 0;
 }
