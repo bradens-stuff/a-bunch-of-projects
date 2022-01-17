@@ -10,6 +10,14 @@ Usage:
 
 Renders numbers like a 7-segment display (digital clocks)
 
+7seg-improved
+-
+Usage:
+
+    $ ./7seg-improved [numbers]
+    
+Same as 7seg but with improved functionality
+
 arrtest
 -
 Usage:
