@@ -12,12 +12,10 @@
     ( (a) < (b) ? (a) : (b) )
 
 // +0: 7-segment for 0-9
-// +70: draw offsets mod 3
-// +73: segment graphics mod 3
-// +76: segment graphics len mod 3
-static char const *draw_data =
-    "1110111001001010111011011011011101011010111101111101001011111111111011"
-    "\1\5\t-||\3\1\1";
+// +10: draw offsets mod 3
+// +13: segment graphics mod 3
+// +16: segment graphics len mod 3
+static char const *draw_data = "w\x12][:koR\x7f{\x01\x05\t-||\x03\x01\x01";
 
 void
 draw_7seg_digit(char *linebuf, char digit, int column)
@@ -29,10 +27,10 @@ draw_7seg_digit(char *linebuf, char digit, int column)
     for(int segid = 0; segid < 7; ++segid){
         char const *gfxptr;
 
-        if(*(draw_data + 7 * (digit - '0') + segid) == '0')
+        if(!(draw_data[digit - '0'] & (0x40 >> segid)))
             continue;
 
-        gfxptr = draw_data + 70 + segid % 3;
+        gfxptr = draw_data + 10 + segid % 3;
         memset(digitbuf + 10 * (segid/3) + gfxptr[0], gfxptr[3], gfxptr[6]);
     }
 
